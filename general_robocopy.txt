@@ -1,0 +1,10 @@
+
+robocopy G:\Users E:\Users /E /W:0 /R:0 /Z /COPY:DATSOU /LOG:E:\Users\logs.txt
+
+robocopy F:\SomeFiles \\SERVER\Users /E /W:0 /R:0 /Z /COPY:DATSOU /LOG:E:\Users\logs.txt
+
+When copying a CIFS share on a NAS device, the following may work better:
+
+robocopy \\SERVER\backup \\NAS01\backup\ /E /W:0 /R:0 /Z /COPY:DATSO /LOG:C:\Temp\logs.txt
+
+robocopy.exe R:\backup\files Q:\files /mir /b /r:0 /log:robo.log /tee /create 
