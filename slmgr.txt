@@ -1,0 +1,31 @@
+======slmgr switches and options======
+
+View Activation, License, and Expiration Date Information:
+slmgr.vbs /dli
+
+To display more detailed license information:
+slmgr.vbs /dlv
+
+View the License Expiration Date:
+slmgr.vbs /xpr
+
+Uninstall the Product Key:
+slmgr.vbs /upk
+
+Uninstall the Product Key from the Registry:
+slmgr.vbs /cpky
+
+Set or Change the Product Key:
+slmgr.vbs /ipk #####-#####-#####-#####-#####
+
+Activate Windows Online:
+slmgr.vbs /ato
+
+Activate Windows Offline:
+slmgr.vbs /dti
+
+then provide the Activation ID:
+slmgr.vbs /atp ACTIVATIONID
+
+Extend the Activation Timer:
+slmgr.vbs /rearm
